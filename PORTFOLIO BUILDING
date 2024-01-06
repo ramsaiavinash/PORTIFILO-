@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <title> Portfolio</title>
-    <link rel ="stylesheet" href="avi.css" />
+    <link rel ="stylesheet" href="file.css" />
 </head>
 <body>
     <header>
-        <h1>RAMA SAI AVINASH</h1>
-        <p>Web Developer</p>
+        <img src="C:\Users\admin\Downloads\avinash.jpg" width="100px" height="100px" float="right">
+        <h1>KANIGOLLA RAMA SAI AVINASH</h1>
+        <h4>Web Developer</h4>
     </header>
 
     <main>
@@ -22,79 +23,108 @@
 
         <section class="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>c,c++</li>
-                <li>python</li>
-            </ul>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">c</div>
+                <div class="skill">c++</div>
+                <div class="skill">python</div>
+                <div class="skill">Best Presenter</div>
+                <div class="skill">Team Leader</div>
         </section>
+        <section class="education">
+            <h2> Education Qualifications</h2>
+            <ul>
+             <li>Sathyabama Institution of science and Technology:BE-ECE (March2021 - April2025)  9.8CGPA</li><br> 
+                <li> Sri Chaitanya Junior College:Intermediate (April2019 - April2021)  96.7%</li><br>
+                <li>Sri Chaitanya Techno School:10th (June2018 - June2019)  9.8CGPA</li>
+            </ul>
+            </section>
 
         <section class="contact">
             <h2>phone number : 6305527063</h2>
-            <p>ramsaiavinash13@gmail.com</p>
-            <p>linkdin.ramsaiavinash13</p>
-            <p>GitHub:RAMA SAI AVINASH_13</p>
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">Email</p>
+            <a href="https://www.linkedin.com/in/ram-sai-avinash-19aaa4251">linkdin</p>
+            <a href="https://github.com/ramsaiavinash">GitHub</p><br>
         </section>
     </main>
 </body>
 </html>
-/* CSS PART  */
- body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-        }
+/* CSS PART */
+body {
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        main {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-gap: 20px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(165, 71, 42);
+  color:brown;
+  
+}
 
-        .projects,
-        .skills,
-        .contact {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: grey;
+}
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 20px;
-        }
+.projects,
+.skills,
+.contact {
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.712);
+}
 
-        .project {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+h4{
+  text-shadow: 5px;
+}
 
-        .skills ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            grid-gap: 10px;
-        }
+.project {
+  background-color: rgb(165, 71, 42);
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.281);
+  color:aliceblue;
+}
 
-        .contact {
-            text-align: center;
-        }
+.skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.education{
+  color:black;
+  list-style: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.712);
+  background-color: bisque;
+  font-family: 'Arial';
+}
+  
+h2{
+  color:brown;
+}
+*{
+  background-color: antiquewhite;
+}
+a:hover{
+  background-color: grey;
+  color:rgba(0, 0, 255, 0.863)
+}
